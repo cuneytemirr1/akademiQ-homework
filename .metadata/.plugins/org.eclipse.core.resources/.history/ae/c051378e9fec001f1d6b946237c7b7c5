@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		User user = new User(5000);
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Welcome To CuneytBank\n"
+				+ "1- Show Current Balance\n"
+				+ "2- Deposit Transaction\n"
+				+ "3- Withdraw\n"
+				+ "0- Quit"
+				+ "Select Operation: ");
+		String operationId = sc.nextLine();
+		sc.close();
+		OPERATION:
+		while (true) {
+			switch (operationId) {
+			case "1":
+				currentBalance(user);
+				break;
+			case "2":
+				deposit(user);
+				break;
+			case "3":
+				withdraw(user);
+				break;
+			case "4":
+				break OPERATION;
+			default:
+				System.out.println("Please Select Correct Operation!");
+			}
+		}
+		
+	}
+	
+	private static void withdraw(User user) {
+		
+	}
+
+	private static void deposit(User user) {
+		System.out.print("Deposit Amount: ");
+		Scanner sc = new Scanner(System.in);
+		int depositAmount = sc.nextInt();
+		sc.close();
+		balance += depositAmount;
+		System.out.println("Current Balance:");
+	}
+
+	private static void currentBalance(User user) {
+		System.out.println("Current Balance: " + balance);
+	}
+
+	// Static Password
+	public static String getPassword() {
+		return "password";
+	}
+	
+	
+	
+
+}

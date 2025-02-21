@@ -1,0 +1,24 @@
+package Market;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double price = 0;
+		
+		System.out.print("1- Yoghurt ($2)\n"
+				+ "2- Pasta ($1)\n"
+				+ "3- Fruit Juice (50 cent)\n"
+				+ "Select Product: ");
+		while (true) {
+			int product = sc.nextInt();
+		}
+		
+		
+	}
+
+}

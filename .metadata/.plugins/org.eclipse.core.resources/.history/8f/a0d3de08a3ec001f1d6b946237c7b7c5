@@ -1,0 +1,19 @@
+package Market;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		double price = 0;
+		
+		System.out.println("1- Yoghurt ($2)\n"
+				+ "2- Pasta ($1)\n"
+				+ "3- Fruit Juice (50 cent");
+		while (true) {
+			
+		}
+		
+		
+	}
+
+}
